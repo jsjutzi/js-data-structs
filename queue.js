@@ -3,14 +3,14 @@ class Queue {
         this.data = []
     }
 
-    pushToQueue(element) {
+    enqueue(element) {
         // O(1)
-        this.data.push(element)
+        return this.data.push(element)
     }
 
-    popFromQueue() {
+    dequeue() {
         // O(n)
-        this.data.shift()
+        return this.data.shift()
     }
 
     isEmpty() {
